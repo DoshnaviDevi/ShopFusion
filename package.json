@@ -1,0 +1,20 @@
+{
+  "name": "shopfusion-full-stack",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Doshnna",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:server": "cd backend && npm run dev",
+    "dev:client": "cd frontend && npm start",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build:client": "cd frontend && npm run build"
+  },
+  "dependencies": {
+    "concurrently": "^10.0.3",
+    "nodemailer": "^9.0.3"
+  }
+}
